@@ -15,7 +15,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    public $table = 'portal_users_mst';
+    public $table = 'business_users_mst';
     
     protected $fillable = [
         'name', 'email', 'password',
