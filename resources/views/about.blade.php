@@ -9,9 +9,9 @@ About myaccount
 <br>
 <div class="container">
   <div class="col-md-8">
-    <p> <strong>Welcome to myaccount School Portal</strong> <br>
+    <p> <strong>Welcome to myaccount Business Portal</strong> <br>
     <br>
-     Register an account to simplify and secure the process of updating your childs school records. 
+     Register an account to simplify and secure the process of accessing public services for your company. 
         In conjunction with SEEMiS Group we will verify your details and allow parents access to their childs records to ensure they are kept up to date. 
         We will never share your details with any third party and we will ensure that only a legal parent/guardian has access to your childs records.
         Once your account has been activated, you will be able to enrol your child in school, pay for school meals, report absences, provide details for our annual update and view 

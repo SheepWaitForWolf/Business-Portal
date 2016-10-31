@@ -85,7 +85,7 @@
 
     <div>
     <p><strong>
-        Your user profile displays your myaccount School Portal information. Please have a look around and be
+        Your user profile displays your myaccount Business Portal information. Please have a look around and be
         sure to complete all the necessary steps for registration. If you would like some assistance setting up your profile
         try having a look at our <a href="/help">help</a> page.
     </strong>

@@ -11,7 +11,7 @@ Accessibility
 	<div class="col-md-8">
 		<p> <strong>Accessibility </strong><br>
 			<br>
-		The accessibility of myaccount School Portal is very important to us and we work to ensure that people with disabilities
+		The accessibility of myaccount Business Portal is very important to us and we work to ensure that people with disabilities
 		are not prevented from accessing their public services online. </p>
 
 		<p> We are committed to ensuring our website works with preferred technologies, including making our site 
