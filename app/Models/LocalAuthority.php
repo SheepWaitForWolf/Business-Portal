@@ -8,7 +8,7 @@ class LocalAuthority extends Model
 {
     use Searchable;    
 
-    protected $table = 'portal_local_authorities_mst';
+    protected $table = 'business_local_authorities_mst';
 
     protected $primaryKey = 'la_id';
 
