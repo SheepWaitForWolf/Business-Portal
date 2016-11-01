@@ -20,6 +20,12 @@ Report Feedback
         <input type="text" name="l_name" class="form-control" id="inputLastName" placeholder="Last Name">
       </div>
     </div>
+      <div class="form-group">
+      <label for="inputCompanyt" class="col-lg-2 control-label">Company</label>
+      <div class="col-lg-10">
+        <input type="text" name="company" class="form-control" id="inputCompany" placeholder="Widgets INC">
+      </div>
+    </div>
     <div class="form-group">
       <label for="inputService" class="col-lg-2 control-label">Select Service</label>
       <div class="col-lg-10">
