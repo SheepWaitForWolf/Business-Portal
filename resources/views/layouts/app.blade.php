@@ -23,7 +23,7 @@
         ]); ?>
     </script>
 </head>
-<body class="login skin-blue">
+<body class="bizback skin-blue">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
