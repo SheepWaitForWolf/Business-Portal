@@ -61,13 +61,12 @@ class HomeController extends Controller
     public function displayUserInfo(Request $request)
     {
         $inboxcount = 13;
-        $childcount = count(DB::table('portal_child_mst')->select('*')->get());
        
-        $username = json_decode(json_encode(DB::table('portal_users_mst')->select(DB::raw('SUBSTRING_INDEX(name, " ", 1) as firstname'))->where('email', '=', 'big_tony@gmail.com')->get()));
+        $username = json_decode(json_encode(DB::table('business_users_mst')->select(DB::raw('SUBSTRING_INDEX(name, " ", 1) as firstname'))->where('email', '=', 'big_tony@gmail.com')->get()));
 
         $fname = $username[0]->firstname;
 
-        return view('home')->with('childcount', $childcount)->with('inboxcount', $inboxcount)->with('fname', $fname);
+        return view('home')->with('inboxcount', $inboxcount)->with('fname', $fname);
     }
 
 }
