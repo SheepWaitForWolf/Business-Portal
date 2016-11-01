@@ -37,7 +37,7 @@
                         Support Team
                         <small><i class="fa fa-clock-o"></i> 5 mins</small>
                       </h4>
-                      <p>Welcome to myaccount School Portal!</p>
+                      <p>Welcome to myaccount Business Portal!</p>
                     </a>
                   </li>
                   <!-- end message -->
@@ -47,7 +47,7 @@
                         <img src="dist/img/defaultavatar.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
-                        AdminLTE Design Team
+                        Clackmannanshire Council
                         <small><i class="fa fa-clock-o"></i> 2 hours</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
@@ -59,10 +59,10 @@
                         <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
-                        Developers
+                        West Lothian Council
                         <small><i class="fa fa-clock-o"></i> Today</small>
                       </h4>
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Happy with your bin collections?</p>
                     </a>
                   </li>
                   <li>
@@ -71,7 +71,7 @@
                         <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
-                        Sales Department
+                        Fife Council
                         <small><i class="fa fa-clock-o"></i> Yesterday</small>
                       </h4>
                       <p>Why not buy a new awesome theme?</p>
@@ -164,7 +164,7 @@
                   <li><!-- Task item -->
                     <a href="/registration">
                       <h3>
-                        Register Children
+                        Register Company
                         <small class="pull-right">50%</small>
                       </h3>
                       <div class="progress xs">
