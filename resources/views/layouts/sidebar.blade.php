@@ -34,13 +34,17 @@
             </span>
           </a>
         </li>
-        <li>
+        <li class="treeview">
           <a href="/apply">
             <i class="fa fa-edit"></i> <span>Apply For</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="/licenses"><i class="fa fa-drivers-license-o"></i>Licences & Permits</a></li>
+            <li><a href="/planningapp"><i class="fa fa-building-o"></i>Submit Planning Application</a></li>
+          </ul>
         </li>
         <li class="treeview">
           <a href="/support">
@@ -52,7 +56,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="/startup"><i class="fa fa-paper-plane-o"></i>Start-Up Advice</a></li>
-            <li><a href="/properties"><i class="fa fa-building-o"></i>Property Directory</a></li>
+            <li><a href="/properties"><i class="fa fa-newspaper-o"></i>Property Directory</a></li>
           </ul>
         </li>
         <li class="treeview">
