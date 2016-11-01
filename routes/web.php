@@ -25,9 +25,6 @@ Route::get('/search', [
 ]);
 
 Route::group(['middleware' => ['web','auth']], function () {
-	Route::get('/about', function () {
-		return view('about');
-	});
 
 	Route::get('/accessibility', function () {
 		return view('accessibility');
@@ -37,13 +34,13 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('help');
 	});
 
-	Route::get('/schoolmeals', function () {
-		return view('schoolmeals');
+		Route::get('/startup', function () {
+		return view('startup');
 	});
 
 	Route::get('/annualupdate', ['uses'=>'ServicesController@getChildren','as'=>'get.services.getChildren']);
 
-	Route::get('logout', array('uses' => 'HomeController@logout'));
+	Route::get('/logout', array('uses' => 'HomeController@logout'));
 
 	Route::get('/home', ['uses'=>'HomeController@displayUserInfo','as'=>'get.home.displayUserInfo']);
 
