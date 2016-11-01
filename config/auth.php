@@ -72,7 +72,7 @@ return [
 
         'users' => [
             'driver' => 'database',
-            'table' => 'portal_users_mst',
+            'table' => 'business_users_mst',
         ],
     ],
 
