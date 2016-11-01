@@ -34,51 +34,38 @@
             </span>
           </a>
         </li>
-        <li class="treeview-menu">
-          <a href="/registration">
-            <i class="fa fa-odnoklassniki"></i>
-            <span>Registration</span>
-            <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
-            </span>
-          </a>
-        </li>
         <li>
-          <a href="/registration">
-            <i class="fa fa-odnoklassniki"></i> <span>Registration</span>
+          <a href="/apply">
+            <i class="fa fa-odnoklassniki"></i> <span>Apply For</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="/support">
             <i class="fa fa-calendar"></i>
-            <span>Attendance</span>
+            <span>Business Support</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/absence"><i class="fa fa-edit"></i>Report an Absence</a></li>
-            <li><a href="/attendance"><i class="fa fa-calendar"></i>View Attendance Record</a></li>
+            <li><a href="/startup"><i class="fa fa-edit"></i>Start-Up Advice</a></li>
+            <li><a href="/properties"><i class="fa fa-calendar"></i>Property Directory</a></li>
           </ul>
         </li>
-        <li>
-          <a href="/schoolmeals">
-            <i class="fa fa-cutlery"></i> <span>School Meals</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
-          </a>
-        </li>
         <li class="treeview">
-          <a href="/annualupdate">
-            <i class="fa fa-calendar-check-o"></i> <span>Annual Detail Checker</span>
+          <a href="/recyclewaste">
+            <i class="fa fa-calendar-check-o"></i> <span>Recycling & Waste</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
+         <ul class="treeview-menu">
+            <li><a href="/commercialwaste"><i class="fa fa-edit"></i>Commercial Waste</a></li>
+            <li><a href="/missedbinreport"><i class="fa fa-calendar"></i>Report Missed Collection</a></li>
+          </ul>
         </li>
         <li>
           <a href="/mailbox">
