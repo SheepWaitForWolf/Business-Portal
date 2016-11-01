@@ -36,7 +36,7 @@
         </li>
         <li>
           <a href="/apply">
-            <i class="fa fa-odnoklassniki"></i> <span>Apply For</span>
+            <i class="fa fa-edit"></i> <span>Apply For</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
@@ -44,7 +44,7 @@
         </li>
         <li class="treeview">
           <a href="/support">
-            <i class="fa fa-calendar"></i>
+            <i class="fa fa-briefcase"></i>
             <span>Business Support</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -52,19 +52,19 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="/startup"><i class="fa fa-edit"></i>Start-Up Advice</a></li>
-            <li><a href="/properties"><i class="fa fa-calendar"></i>Property Directory</a></li>
+            <li><a href="/properties"><i class="fa fa-building-o"></i>Property Directory</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="/recyclewaste">
-            <i class="fa fa-calendar-check-o"></i> <span>Recycling & Waste</span>
+            <i class="fa fa-recycle"></i> <span>Recycling & Waste</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
          <ul class="treeview-menu">
-            <li><a href="/commercialwaste"><i class="fa fa-edit"></i>Commercial Waste</a></li>
-            <li><a href="/missedbinreport"><i class="fa fa-calendar"></i>Report Missed Collection</a></li>
+            <li><a href="/commercialwaste"><i class="fa fa-trash"></i>Commercial Waste</a></li>
+            <li><a href="/missedbinreport"><i class="fa fa-truck"></i>Report Missed Collection</a></li>
           </ul>
         </li>
         <li>
