@@ -28,7 +28,7 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="/home">
-            <i class="fa fa-dashboard"></i> <span>Profile</span>
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -51,7 +51,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/startup"><i class="fa fa-edit"></i>Start-Up Advice</a></li>
+            <li><a href="/startup"><i class="fa fa-paper-plane-o"></i>Start-Up Advice</a></li>
             <li><a href="/properties"><i class="fa fa-building-o"></i>Property Directory</a></li>
           </ul>
         </li>
