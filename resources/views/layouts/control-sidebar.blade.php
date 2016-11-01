@@ -16,7 +16,7 @@ s  <!-- Control Sidebar -->
               <i class="menu-icon fa fa-calendar bg-red"></i>
 
               <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Absence Reported</h4>
+                <h4 class="control-sidebar-subheading">Missed Bin Report Submitted</h4>
 
                 <p>10-10-2016</p>
               </div>
@@ -31,7 +31,7 @@ s  <!-- Control Sidebar -->
               <i class="menu-icon fa fa-birthday-cake bg-red"></i>
 
               <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Lou's Birthday</h4>
+                <h4 class="control-sidebar-subheading">Stephen's Birthday</h4>
 
                 <p>Will be 21 on Jan 24th</p>
               </div>
