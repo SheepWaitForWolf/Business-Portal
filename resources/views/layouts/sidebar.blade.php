@@ -38,11 +38,11 @@
           <a href="/apply">
             <i class="fa fa-edit"></i> <span>Apply For</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/licenses"><i class="fa fa-drivers-license-o"></i>Licences & Permits</a></li>
+            <li><a href="/licenses"><i class="fa fa-fire"></i>Licences & Permits</a></li>
             <li><a href="/planningapp"><i class="fa fa-building-o"></i>Submit Planning Application</a></li>
           </ul>
         </li>
@@ -67,8 +67,8 @@
             </span>
           </a>
          <ul class="treeview-menu">
-            <li><a href="/commercialwaste"><i class="fa fa-trash"></i>Commercial Waste</a></li>
-            <li><a href="/missedbinreport"><i class="fa fa-truck"></i>Report Missed Collection</a></li>
+            <li><a href="/waste"><i class="fa fa-trash"></i>Commercial Waste</a></li>
+            <li><a href="/missedbins"><i class="fa fa-truck"></i>Report Missed Collection</a></li>
           </ul>
         </li>
         <li>

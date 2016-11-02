@@ -46,6 +46,11 @@ Route::group(['middleware' => ['web','auth']], function () {
 	Route::get('/licenses', function () {
 		return view('licenses');
 	});
+
+
+	Route::get('/waste', function () {
+		return view('waste');
+	});
 	Route::get('/logout', array('uses' => 'HomeController@logout'));
 
 	Route::get('/home', ['uses'=>'HomeController@displayUserInfo','as'=>'get.home.displayUserInfo']);
