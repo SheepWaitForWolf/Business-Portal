@@ -51,6 +51,11 @@ Route::group(['middleware' => ['web','auth']], function () {
 	Route::get('/waste', function () {
 		return view('waste');
 	});
+		
+	Route::get('/missedbins', function () {
+		return view('missedbins');
+	});
+
 	Route::get('/logout', array('uses' => 'HomeController@logout'));
 
 	Route::get('/home', ['uses'=>'HomeController@displayUserInfo','as'=>'get.home.displayUserInfo']);
