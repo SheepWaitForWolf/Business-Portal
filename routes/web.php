@@ -38,8 +38,14 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('startup');
 	});
 
-	Route::get('/annualupdate', ['uses'=>'ServicesController@getChildren','as'=>'get.services.getChildren']);
+	Route::get('/planningapp', function () {
+		return view('planningapp');
+	});
 
+
+	Route::get('/licenses', function () {
+		return view('licenses');
+	});
 	Route::get('/logout', array('uses' => 'HomeController@logout'));
 
 	Route::get('/home', ['uses'=>'HomeController@displayUserInfo','as'=>'get.home.displayUserInfo']);
@@ -50,10 +56,6 @@ Route::group(['middleware' => ['web','auth']], function () {
 	| Services GET Routes
 	|--------------------------------------------------------------------------
 	*/
-
-	Route::get('/attendance', function () {
-		return view('attendance');
-	});
 
 	Route::get('/registration/{child_id?}', ['uses'=>'ServicesController@getChildren','as'=>'get.services.getChildren']);
 	Route::get('/absence/{absence_id?}', ['uses'=>'ServicesController@getAbsencePage','as'=>'get.services.getAbsencePage']);
