@@ -96,7 +96,7 @@ Property Listings
                 <tbody id="property-list" name="property-list">
                     @foreach ($properties as $property)
                     <tr id="property{{$property->property_id}}">
-                        <td>{{$property->property_id</td>
+                        <td>{{$property->property_id}}</td>
                         <td>{{$property->f_name}}</td>
                         <td>{{$property->l_name}}</td>
                         <td>{{$property->service}}</td>
