@@ -42,6 +42,9 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('planningapp');
 	});
 
+	Route::get('/businessrates', function () {
+		return view('businessrates');
+	});
 
 	Route::get('/permits', function () {
 		return view('permits');

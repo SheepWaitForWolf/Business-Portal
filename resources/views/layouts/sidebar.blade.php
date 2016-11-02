@@ -57,6 +57,7 @@
           <ul class="treeview-menu">
             <li><a href="/startup"><i class="fa fa-paper-plane-o"></i>Start-Up Advice</a></li>
             <li><a href="/properties"><i class="fa fa-newspaper-o"></i>Property Directory</a></li>
+            <li><a href="/businessrates"><i class="fa fa-industry"></i>Business Rates</a></li>
           </ul>
         </li>
         <li class="treeview">
