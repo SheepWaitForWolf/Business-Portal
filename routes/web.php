@@ -43,8 +43,8 @@ Route::group(['middleware' => ['web','auth']], function () {
 	});
 
 
-	Route::get('/licenses', function () {
-		return view('licenses');
+	Route::get('/permits', function () {
+		return view('permits');
 	});
 
 
