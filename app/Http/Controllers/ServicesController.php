@@ -22,16 +22,6 @@ use Log;
 
 class ServicesController extends Controller
 {
-    
-
-	public function getChildren() {
-        $children = Child::all();
-        $authorities = LocalAuthority::all();
-        $absences = Absence::all();
-
-        return view('registration')->with('children', $children)->with('authorities', $authorities);
-    }
-
 
     public function getSchools(Request $request){
         
@@ -63,8 +53,9 @@ class ServicesController extends Controller
     	return view('annualupdate')->with('children', $children)->with('authorities', $authorities);
     }
 
-     public function getResultsPage() {
-    	return view('results');
+     public function getProperties() {
+        $properties = Property::all();
+    	return view('properties')->with('properties', $properties);
     }
 
      public function getSchoolMealsPage() {
@@ -82,6 +73,7 @@ class ServicesController extends Controller
         $feedback = new Feedback;
         $feedback->f_name = $request->f_name;
         $feedback->l_name = $request->l_name;
+        $feedback->company = $request->company;
         $feedback->service = $request->service;
         $feedback->rating = $request->rating;
         $feedback->message = $request->message;
