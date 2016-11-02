@@ -46,10 +46,13 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('businessrates');
 	});
 
+	Route::get('/environment', function () {
+		return view('environment');
+	});
+
 	Route::get('/permits', function () {
 		return view('permits');
 	});
-
 
 	Route::get('/waste', function () {
 		return view('waste');
