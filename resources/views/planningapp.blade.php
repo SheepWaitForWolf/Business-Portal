@@ -77,42 +77,7 @@ Submit Planning Application
 </form>
 @endsection
 
-@section('List')
- <!-- Table-to-load-the-data Part -->
- <div class="row">
 
-    <div class="col-lg-12">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Feedback ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Service</th>
-                        <th>Rating</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
-                <tbody id="feedback-list" name="feedback-list">
-                    @foreach ($feedbacks as $feedback)
-                    <tr id="feedback{{$feedback->feedback_id}}">
-                        <td>{{$feedback->feedback_id}}</td>
-                        <td>{{$feedback->f_name}}</td>
-                        <td>{{$feedback->l_name}}</td>
-                        <td>{{$feedback->service}}</td>
-                        <td>{{$feedback->rating}}</td>
-                        <td>{{$feedback->message}}</td>
-                        <td>
-                            <button class="btn btn-warning btn-xs btn-detail open-modal-feedback" value={{$feedback->feedback_id}}>Edit</button>
-                            <button class="btn btn-danger btn-xs btn-delete delete-feedback" value={{$feedback->feedback_id}}>Delete</button>
-                        </td>
-                    </tr>
-                    @endforeach 
-                </tbody>
-            </table>
-          </div>
-          </div>
-@endsection
 
 @section('Modal')
     <div class="modal fade" id="myFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

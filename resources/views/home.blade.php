@@ -30,7 +30,7 @@
          </a>
           <div class="info-box-content">
             <span class="info-box-text">Registered Children</span>
-            <span class="info-box-number">{{$childcount}}</span>
+            <span class="info-box-number"></span>
           </div><!-- /.info-box-content -->
             </a>
         </div><!-- /.info-box -->
