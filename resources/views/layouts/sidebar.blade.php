@@ -62,7 +62,7 @@
           </ul>
         </li>
         <li class="treeview">
-          <a href="/recyclewaste">
+          <a href="#">
             <i class="fa fa-recycle"></i> <span>Recycling & Waste</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

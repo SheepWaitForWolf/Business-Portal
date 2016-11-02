@@ -5,169 +5,114 @@ Trading Standards
 @endsection
 
 
-@section('Form')
-<form class="form-horizontal" action="{{ url('/feedback/') }}" method="post">
-  <fieldset>
-    <div class="form-group">
-      <label for="inputFirstName" class="col-lg-2 control-label">First Name</label>
-      <div class="col-lg-10">
-        <input type="text" name="f_name" class="form-control" id="inputFirstName" placeholder="First Name">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputLastName" class="col-lg-2 control-label">Last Name</label>
-      <div class="col-lg-10">
-        <input type="text" name="l_name" class="form-control" id="inputLastName" placeholder="Last Name">
-      </div>
-    </div>
-      <div class="form-group">
-      <label for="inputCompany" class="col-lg-2 control-label">Company</label>
-      <div class="col-lg-10">
-        <input type="text" name="company" class="form-control" id="inputCompany" placeholder="Widgets INC">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputService" class="col-lg-2 control-label">Select Service</label>
-      <div class="col-lg-10">
-        <select name="service" class="form-control" id="inputService">
-            <option value="Registration">Registration</option>
-            <option value="School Enrolment">School Enrolment</option>
-            <option value="Annual Details Check">Annual Details Check</option>
-            <option value="Report an Absence">Report an Absence</option>
-            <option value="School Meals">School Meals</option>
-        </select>
-      </div>
-        <br>
-      </div>
-    <div class="form-group">
-      <label for="inputRating" class="col-lg-2 control-label">Rating</label>
-      <div class="col-lg-10">
-        <select name="rating" class="form-control" id="inputRating">
-            <option value="Excellent">Excellent</option>
-            <option value="Good">Good</option>
-            <option value="Average">Average</option>
-            <option value="Poor">Poor</option>
-            <option value="Very Poor">Very Poor</option>
-        </select>
-      </div>
-        <br>
-      </div>
-      <div class="form-group">
-      <label for="inputMessage" class="col-lg-2 control-label">Message</label>
-      <div class="col-lg-10">
-        <textarea rows="4" cols="50" name="message" class="form-control" id="inputMessage" placeholder="Type your message here">
-        </textarea>
-        <!-- <input type="textarea" rows="4" cols="50" name="message" class="form-control" id="inputMessage" placeholder="Type your message here"> -->
-      </div>
-        <br>
-      </div>
-       <div class="form-group">
-      <div class="col-lg-10">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-      </div>
-        <br>
-      </div>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
+@section('Content')
+<div id="content" class="region">
+            <div id="block-system-main" class="block block-system no-title odd first last block-count-5 block-region-content block-main" >  
+  
+  <article id="node-269" class="node node-page article odd node-full clearfix" about="/business/business-regulation/trading-standards" typeof="foaf:Document" role="article">
+  
+  
+  
+  <div class="node-content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><p>We offer a range of Trading Standards advice for business to help you to ensure that your business is complying with its legal responsibilities and obligations. There is extensive information on these for businesses on the <a href="http://www.tradingstandards.uk/home.cfm">Chartered Trading Standards Institute</a> website, including concise guidance and more detailed information.  The information broadly falls into the following areas:</p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 100%"><tbody><tr><td style="text-align: left; vertical-align: top; width: 50%;">
+<h4>Age Restricted Sales</h4>
+</td>
+<td style="text-align: left; vertical-align: top; width: 50%;">
+<h4>Weights and Measures</h4>
+</td>
+</tr><tr><td style="text-align: left; vertical-align: top;">
+<ul><li>Aerosol spray paints</li>
+<li>Age-restricted products</li>
+<li>Alcohol</li>
+<li>Cigarette lighter refills &amp; solvents</li>
+<li>Crossbows, air weapons, etc</li>
+<li>Fireworks</li>
+<li>Knives &amp; other bladed item</li>
+<li>Online sales of age-restricted products</li>
+<li>Sunbeds</li>
+<li>Tobacco products</li>
+<li>Video recordings &amp; games for sale &amp; hire</li>
+</ul></td>
+<td style="text-align: left; vertical-align: top;">
+<ul><li>Packaged goods – average quantity</li>
+<li>Price marking of goods for retail sale</li>
+<li>Small bakers &amp; average weight</li>
+<li>The sale &amp; delivery of oil &amp; gas</li>
+<li>The sale of alcohol in licensed premises</li>
+<li>The sale of solid fuel &amp; wood fuel</li>
+<li>Weighing equipment for legal use</li>
+<li>Weights &amp; measures for butchers</li>
+<li>Weights &amp; measures for fishmongers</li>
+<li>Weights &amp; measures for greengrocers</li>
+</ul></td>
+</tr></tbody></table><table border="1" cellpadding="1" cellspacing="1" style="width: 100%"><tbody><tr><td style="width: 50%;">
+<h4>Fair Trading</h4>
+</td>
+<td style="width: 50%;">
+<h4>Product Safety</h4>
+</td>
+</tr><tr><td>
+<ul><li>Accurately describing goods &amp; services</li>
+<li>Car boot sales</li>
+<li>Company &amp; business names</li>
+<li>Consumer contracts – distance sales</li>
+<li>Consumer contracts – off-premises sales</li>
+<li>Consumer contracts – on-premises sales</li>
+<li>Consumer protection from unfair trading</li>
+<li>Credit &amp; other financial matters</li>
+<li>Digital content</li>
+<li>Displaying prices in hotels etc</li>
+<li>Herbal medicine &amp; health food shops</li>
+<li>Internet auction sites &amp; marketplaces</li>
+<li>Labelling of textiles</li>
+<li>Membership logos &amp; claims of approval</li>
+<li>Mileage of used vehicles</li>
+<li>Motor vehicle servicing &amp; repairs</li>
+<li>Online reviews &amp; endorsements</li>
+<li>Online sales of age-restricted products</li>
+<li>Payment surcharges</li>
+<li>Price marking of goods for retail sale</li>
+<li>Returns policies</li>
+<li>The sale &amp; resale of tickets</li>
+<li>The sale &amp; supply of goods</li>
+<li>The sale &amp; supply of goods – before 1 October 2015</li>
+<li>The sale of alcohol in licensed premises</li>
+<li>The supply of services</li>
+<li>The supply of services / goods with services – before 1 October 2015</li>
+<li>Unfair contract terms</li>
+<li>Used car sales</li>
+</ul></td>
+<td style="vertical-align: top;">
+<ul><li>Cosmetic products</li>
+<li>Electrical equipment</li>
+<li>Food imitations</li>
+<li>General product safety – distributors</li>
+<li>General product safety – producers</li>
+<li>Goods in rented accommodation</li>
+<li>Jewellery safety – metal content</li>
+<li>Mini motos, off-road vehicles, etc</li>
+<li>New &amp; second-hand prams &amp; pushchairs</li>
+<li>New nightwear</li>
+<li>New upholstered furniture</li>
+<li>Ornamental &amp; novelty giftware</li>
+<li>Part-worn tyres</li>
+<li>Product safety – due diligence</li>
+<li>Second-hand electrical goods</li>
+<li>Second-hand gas cooking appliances</li>
+<li>Second-hand upholstered furniture</li>
+<li>Toys</li>
+<li>Unsafe goods – liability</li>
+</ul></td>
+</tr></tbody></table><p> </p>
+<p>If you need any additional information on Trading Standards for business in East Dunbartonshire, please contact <a href="mailto:customerservices@eastdunbarton.gov.uk?subject=Trading%20Standards%20for%20Business">Customer Services</a>.</p>
+</div></div></div>  </div>
+
+  
+  
+  <span property="dc:title" content="Trading Standards" class="rdf-meta element-hidden"></span></article>
+
+  </div>            </div>
+
 @endsection
 
-@section('List')
- <!-- Table-to-load-the-data Part -->
- <div class="row">
-
-    <div class="col-lg-12">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Feedback ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Service</th>
-                        <th>Rating</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
-                <tbody id="feedback-list" name="feedback-list">
-                    @foreach ($feedbacks as $feedback)
-                    <tr id="feedback{{$feedback->feedback_id}}">
-                        <td>{{$feedback->feedback_id}}</td>
-                        <td>{{$feedback->f_name}}</td>
-                        <td>{{$feedback->l_name}}</td>
-                        <td>{{$feedback->service}}</td>
-                        <td>{{$feedback->rating}}</td>
-                        <td>{{$feedback->message}}</td>
-                        <td>
-                            <button class="btn btn-warning btn-xs btn-detail open-modal-feedback" value={{$feedback->feedback_id}}>Edit</button>
-                            <button class="btn btn-danger btn-xs btn-delete delete-feedback" value={{$feedback->feedback_id}}>Delete</button>
-                        </td>
-                    </tr>
-                    @endforeach 
-                </tbody>
-            </table>
-          </div>
-          </div>
-@endsection
-
-@section('Modal')
-    <div class="modal fade" id="myFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Amend Details</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form id="frmfeedbacks" name="frmfeedbacks" class="form-horizontal" novalidate="">
-
-                                <div class="form-group error">
-                                    <label for="f_name" class="col-sm-3 control-label">First Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control has-error" id="f_name" name="f_name" placeholder="First Name" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group error">
-                                    <label for="l_name" class="col-sm-3 control-label">Last Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control has-error" id="l_name" name="l_name" placeholder="Last Name" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="service" class="col-sm-3 control-label">Service</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="service" name="service" placeholder="Registration" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="rating" class="col-sm-3 control-label">Rating</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="rating" name="rating" placeholder="Excellent" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message" class="col-sm-3 control-label">Message</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="message" name="message" placeholder="Excellent" value="">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" id="btn-save-feedback" value="add">Save changes</button>
-                            <input type="hidden" id="feedback_id" name="feedback_id" value="0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endsection

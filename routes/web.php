@@ -50,6 +50,10 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('environment');
 	});
 
+	Route::get('/tradingstandards', function () {
+		return view('tradingstandards');
+	});
+
 	Route::get('/permits', function () {
 		return view('permits');
 	});
