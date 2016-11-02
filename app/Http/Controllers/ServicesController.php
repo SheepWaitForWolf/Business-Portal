@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 use App\Models\Child;
 use App\Models\Feedback;
 use App\Models\LocalAuthority;
-use App\Models\Absence;
+use App\Models\Property;
 use App\Models\School;
 use App\Http\Requests;
 use Response;
@@ -55,7 +55,8 @@ class ServicesController extends Controller
 
      public function getProperties() {
         $properties = Property::all();
-    	return view('properties')->with('properties', $properties);
+        $feedbacks = Feedback::all();
+    	return view('properties')->with('properties', $properties)->with('feedbacks', $feedbacks);
     }
 
      public function getSchoolMealsPage() {

@@ -56,6 +56,10 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('missedbins');
 	});
 
+		Route::get('/missedbins', function () {
+		return view('missedbins');
+	});
+
 	Route::get('/logout', array('uses' => 'HomeController@logout'));
 
 	Route::get('/home', ['uses'=>'HomeController@displayUserInfo','as'=>'get.home.displayUserInfo']);
@@ -67,7 +71,7 @@ Route::group(['middleware' => ['web','auth']], function () {
 	|--------------------------------------------------------------------------
 	*/
 
-	Route::get('/registration/{child_id?}', ['uses'=>'ServicesController@getChildren','as'=>'get.services.getChildren']);
+	Route::get('/properties', ['uses'=>'ServicesController@getProperties','as'=>'get.services.getProperties']);
 	Route::get('/absence/{absence_id?}', ['uses'=>'ServicesController@getAbsencePage','as'=>'get.services.getAbsencePage']);
 	Route::get('/enrol/{enrol_id?}', ['uses'=>'ServicesController@getEnrolmentPage','as'=>'get.services.getEnrolmentPage']);
 	Route::get('/absence', ['uses'=>'ServicesController@getAbsencePage','as'=>'get.services.getAbsencePage']);
