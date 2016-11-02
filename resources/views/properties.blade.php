@@ -103,8 +103,8 @@ Property Listings
                         <td>{{$property->rating}}</td>
                         <td>{{$property->message}}</td>
                         <td>
-                            <button class="btn btn-warning btn-xs btn-detail open-modal-property" value={{$d;</td->d;</td_id}}>Edit</button>
-                            <button class="btn btn-danger btn-xs btn-delete delete-property" value={{$d;</td>->d;</td>_id}}>Delete</button>
+                            <button class="btn btn-warning btn-xs btn-detail open-modal-property" value={{$property->property_id}}>Edit</button>
+                            <button class="btn btn-danger btn-xs btn-delete delete-property" value={{$property->property_id}}>Delete</button>
                         </td>
                     </tr>
                     @endforeach 
