@@ -24,7 +24,7 @@ Help
 
 	 	 <p>Your feedback is important to us and allows us to improve the level of service we provide. If you would like
 	 	 	to make us aware of something in your area or with an issue with the site or the service you received, please don't 
-	 	 	hesitate to fill in our feedback form, which can be found <a href="/feeedback">here</a>, and we will respond as soon as we can.
+	 	 	hesitate to fill in our feedback form, which can be found <a href="/feedback">here</a>, and we will respond as soon as we can.
 	 	 </p>
 	</div>
 </div>
