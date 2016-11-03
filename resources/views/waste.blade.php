@@ -5,6 +5,8 @@ Commercial Waste
 @stop
 
 @section('Content')
+
+<h3> Commercial Waste </h3>
 <br>
 <div class="container">
 	<div class="col-md-8">
