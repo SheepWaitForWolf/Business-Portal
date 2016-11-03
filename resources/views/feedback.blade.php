@@ -4,6 +4,9 @@
 Report Feedback
 @endsection
 
+@section('Content')
+Submit Feedback
+@stop
 
 @section('Form')
 <form class="form-horizontal" action="{{ url('/feedback/') }}" method="post">
@@ -77,97 +80,3 @@ Report Feedback
 </form>
 @endsection
 
-@section('List')
- <!-- Table-to-load-the-data Part -->
- <div class="row">
-
-    <div class="col-lg-12">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Feedback ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Service</th>
-                        <th>Rating</th>
-                        <th>Message</th>
-                    </tr>
-                </thead>
-                <tbody id="feedback-list" name="feedback-list">
-                    @foreach ($feedbacks as $feedback)
-                    <tr id="feedback{{$feedback->feedback_id}}">
-                        <td>{{$feedback->feedback_id}}</td>
-                        <td>{{$feedback->f_name}}</td>
-                        <td>{{$feedback->l_name}}</td>
-                        <td>{{$feedback->service}}</td>
-                        <td>{{$feedback->rating}}</td>
-                        <td>{{$feedback->message}}</td>
-                        <td>
-                            <button class="btn btn-warning btn-xs btn-detail open-modal-feedback" value={{$feedback->feedback_id}}>Edit</button>
-                            <button class="btn btn-danger btn-xs btn-delete delete-feedback" value={{$feedback->feedback_id}}>Delete</button>
-                        </td>
-                    </tr>
-                    @endforeach 
-                </tbody>
-            </table>
-          </div>
-          </div>
-@endsection
-
-@section('Modal')
-    <div class="modal fade" id="myFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Amend Details</h4>
-                        </div>
-                        <div class="modal-body">
-                            <form id="frmfeedbacks" name="frmfeedbacks" class="form-horizontal" novalidate="">
-
-                                <div class="form-group error">
-                                    <label for="f_name" class="col-sm-3 control-label">First Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control has-error" id="f_name" name="f_name" placeholder="First Name" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group error">
-                                    <label for="l_name" class="col-sm-3 control-label">Last Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control has-error" id="l_name" name="l_name" placeholder="Last Name" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="service" class="col-sm-3 control-label">Service</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="service" name="service" placeholder="Registration" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="rating" class="col-sm-3 control-label">Rating</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="rating" name="rating" placeholder="Excellent" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message" class="col-sm-3 control-label">Message</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="message" name="message" placeholder="Excellent" value="">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" id="btn-save-feedback" value="add">Save changes</button>
-                            <input type="hidden" id="feedback_id" name="feedback_id" value="0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endsection
