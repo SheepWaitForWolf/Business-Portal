@@ -21,10 +21,10 @@
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
+              <span class="label label-success">13</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">You have 13 messages</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -50,7 +50,7 @@
                         Clackmannanshire Council
                         <small><i class="fa fa-clock-o"></i> 2 hours</small>
                       </h4>
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Why not buy our new awesome theme?</p>
                     </a>
                   </li>
                   <li>
@@ -74,7 +74,7 @@
                         Fife Council
                         <small><i class="fa fa-clock-o"></i> Yesterday</small>
                       </h4>
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Environmental Health Report</p>
                     </a>
                   </li>
                   <li>
