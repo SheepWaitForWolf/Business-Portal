@@ -23,36 +23,6 @@ use Log;
 class ServicesController extends Controller
 {
 
-    public function getSchools(Request $request){
-        
-        $authorities = LocalAuthority::all();
-        $absences = Absence::all();
-        $id = intval($id = $request->d);
-        $la_name = LocalAuthority::find($id)->la_name;
-        $schools = DB::select('SELECT school_name FROM portal_schools_mst WHERE local_authority_id = :id', ['id' => $id]);
-        $response = Response::make($schools, "200");
-        $response->header('Content-Type', 'text/json');
-        return $response;
-        return $la_name;
-    }
-
-     public function getAbsencePage(Request $request) {
-
-        $authorities = LocalAuthority::all();
-        $absences = Absence::all();
-        $schools = DB::select('SELECT school_name FROM portal_schools_mst WHERE local_authority_id = :id', ['id' => 1]);
-        $response = $schools;
-    	return view('absence')->with('authorities', $authorities)->with('absences', $absences)->with('schools', $schools)->with('response', $response);
-    }
-
-     public function getAnnualUpdatePage() {
-        $children = Child::all();
-        $authorities = LocalAuthority::all();
-        $absences = Absence::all();
-
-    	return view('annualupdate')->with('children', $children)->with('authorities', $authorities);
-    }
-
      public function getProperties() {
 
         $properties = DB::table('business_properties_mst')->simplePaginate(25);
@@ -92,45 +62,6 @@ class ServicesController extends Controller
        return;
     }
 
-   
-    public function postAbsencePage(Request $request)
-    {
-        $la_name = LocalAuthority::find($request->la)->la_name;
-        $absencerecord = new Absence;
-        $absencerecord->f_name = $request->f_name;
-        $absencerecord->l_name = $request->l_name;
-        $absencerecord->la = $la_name;
-        $absencerecord->school = $request->school;
-        $absencerecord->school_id = $request->id;
-
-        $absencerecord->doa = $request->doa;
-        $absencerecord->reason_for_absence = $request->reason_for_absence;
-        $absencerecord->save();
-
-        // return $this->getAbsencePage();
-
-        return redirect()->route('post.services.postAbsencePage');
-    }
-
-     public function postChildren(Request $request)
-    {
-        $childrecord = new Child;
-        $childrecord->f_name = $request->f_name;
-        $childrecord->l_name = $request->l_name;
-        $childrecord->gender = $request->gender;
-        $childrecord->dob = $request->dob;
-        $childrecord->class_level = $request->class_level;
-        $childrecord->school = $request->school;
-        $childrecord->local_authority_id = $request->local_authority_id;
-        $childrecord->save();
-
-        // return $this->getChildren();
-
-        return redirect()->route('get.services.getChildren');
-
-
-        
-    }
 
     public function postMapping(Request $request, $id)
     {
@@ -141,35 +72,6 @@ class ServicesController extends Controller
 
         $mappingrecord->save();
         return;
-    }
-
-
-     public function updateChildren(Request $request)
-    {
-        $childrecord = Child::find($request->child_id);
-        $childrecord->f_name = $request->f_name;
-        $childrecord->l_name = $request->l_name;
-        $childrecord->gender = $request->gender;
-        $childrecord->dob = $request->dob;
-        $childrecord->save();
-
-        return $this->getChildren();
-        
-    }
-
-    public function deleteChild($id){
-
-       $childrecord = Child::find($id);
-       $childrecord->delete();
-       return $this->getChildren();
-       // return redirect()->route('get.services.geredirect()->route('get.services.getChildren')tChildren');
-    }
-
-    public function deleteAbsencePage($id){
-
-       $absencerecord = Absence::find($id);
-       $absencerecord->delete();
-       return;
     }
 
 }
