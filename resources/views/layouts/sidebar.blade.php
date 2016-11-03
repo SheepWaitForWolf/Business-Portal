@@ -74,6 +74,14 @@
             <li><a href="/environment"><i class="fa fa-tree"></i>Environmental Health</a></li> 
           </ul>
         </li>
+         <li>
+          <a href="/feedback">
+            <i class="fa fa-edit"></i> <span>Submit Feedback</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        </li>
         <li>
           <a href="/mailbox">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
