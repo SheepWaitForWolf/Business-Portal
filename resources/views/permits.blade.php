@@ -5,6 +5,11 @@ Licenses & Permits
 @endsection
 
 
+@section('Content')
+<h3>Licenses & Permits</h3>
+<br>
+@stop
+
 @section('Form')
 <form class="form-horizontal" action="{{ url('/feedback/') }}" method="post">
   <fieldset>
@@ -27,14 +32,15 @@ Licenses & Permits
       </div>
     </div>
     <div class="form-group">
-      <label for="inputService" class="col-lg-2 control-label">Select Service</label>
+      <label for="inputService" class="col-lg-2 control-label">Select License Type</label>
       <div class="col-lg-10">
         <select name="service" class="form-control" id="inputService">
-            <option value="Registration">Registration</option>
-            <option value="School Enrolment">School Enrolment</option>
-            <option value="Annual Details Check">Annual Details Check</option>
-            <option value="Report an Absence">Report an Absence</option>
-            <option value="School Meals">School Meals</option>
+            <option value="Taxi or Private Hire Operator">Taxi or Private Hire Operator</option>
+            <option value="Taxi or Private Hire Driver">Taxi or Private Hire Driver</option>
+            <option value="Window Cleaner">Window Cleaner</option>
+            <option value="Temporary Road Closure">Temporary Road Closure</option>
+            <option value="Street Trading">Street Trading</option>
+            <option value="Street Cafes">Street Cafes</option>
         </select>
       </div>
         <br>
