@@ -61,6 +61,10 @@ Route::group(['middleware' => ['web','auth']], function () {
 	Route::get('/waste', function () {
 		return view('waste');
 	});
+
+	Route::get('/termsofuse', function () {
+		return view('termsofuse');
+	});
 		
 	Route::get('/missedbins', function () {
 		return view('missedbins');
