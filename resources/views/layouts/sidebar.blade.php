@@ -42,7 +42,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/licenses"><i class="fa fa-fire"></i>Licences & Permits</a></li>
+            <li><a href="/permits"><i class="fa fa-fire"></i>Licences & Permits</a></li>
             <li><a href="/planningapp"><i class="fa fa-building-o"></i>Submit Planning Application</a></li>
           </ul>
         </li>
@@ -93,7 +93,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="/help"><i class="fa fa-question-circle"></i>Help</a></li>
-            <li><a href="/accessibility"><i class="fa fa-wheelchair"></i> Accessibility</a></li>
+            <li><a href="/accessibility"><i class="fa fa-wheelchair"></i>Accessibility</a></li>
+            <li><a href="/termsofuse"><i class="fa fa-balance-scale"></i>Terms of Use</a></li>
           </ul>
         </li>
       </ul>
