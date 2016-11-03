@@ -5,7 +5,8 @@ Report Feedback
 @endsection
 
 @section('Content')
-Submit Feedback
+<h3>Submit Feedback</h3>
+<br>
 @stop
 
 @section('Form')
