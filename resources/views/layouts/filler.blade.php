@@ -10,6 +10,8 @@
 
       @yield('Form')
 
+      @yield('List')
+
       @yield('Modal')
 
     </section>

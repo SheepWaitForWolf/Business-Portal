@@ -54,13 +54,10 @@ class ServicesController extends Controller
     }
 
      public function getProperties() {
-        $properties = Property::all();
+
+        $properties = DB::table('business_properties_mst')->simplePaginate(25);
         $feedbacks = Feedback::all();
     	return view('properties')->with('properties', $properties)->with('feedbacks', $feedbacks);
-    }
-
-     public function getSchoolMealsPage() {
-    	return view('schoolmeals');
     }
 
      public function getFeedbackPage() {

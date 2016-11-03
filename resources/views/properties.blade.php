@@ -4,6 +4,10 @@
 Property Listings
 @endsection
 
+@section('Content')
+Property Listings
+@stop
+
 @section('List')
  <!-- Table-to-load-the-data Part -->
  <div class="row">
