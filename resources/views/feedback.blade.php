@@ -34,11 +34,11 @@ Report Feedback
       <label for="inputService" class="col-lg-2 control-label">Select Service</label>
       <div class="col-lg-10">
         <select name="service" class="form-control" id="inputService">
-            <option value="Registration">Registration</option>
-            <option value="School Enrolment">School Enrolment</option>
-            <option value="Annual Details Check">Annual Details Check</option>
-            <option value="Report an Absence">Report an Absence</option>
-            <option value="School Meals">School Meals</option>
+            <option value="Waste Collection">Waste Collection</option>
+            <option value="Business Rates">Business Rates</option>
+            <option value="Licensing & Permits">Licensing & Permits</option>
+            <option value="Planning Applications">Planning Applications</option>
+            <option value="Property Directory">Property Directory</option>
         </select>
       </div>
         <br>
