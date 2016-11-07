@@ -98,10 +98,10 @@
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-warning">5</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 3 notifications</li>
+              <li class="header">You have 5 notifications</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -140,10 +140,10 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
+              <span class="label label-danger">4</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
+              <li class="header">You have 4 tasks</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -178,7 +178,7 @@
                   <li><!-- Task item -->
                     <a href="/annualupdate">
                       <h3>
-                        Annual Detail Check
+                        Pay Business Rates
                         <small class="pull-right">90%</small>
                       </h3>
                       <div class="progress xs">
@@ -192,7 +192,7 @@
                   <li><!-- Task item -->
                     <a href="/schoolmeals">
                       <h3>
-                        Claim Free School Meals
+                        Submit a Planning Application
                         <small class="pull-right">20%</small>
                       </h3>
                       <div class="progress xs">
