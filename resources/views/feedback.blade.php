@@ -7,6 +7,9 @@ Report Feedback
 @section('Content')
 <h3>Submit Feedback</h3>
 <br>
+<p> User feedback is very important to myaccount Business Portal as it allows us to assess the quality of service provided and also to address issues as early as possible.</p>
+<p> We are committed to responding to all instances of user feedback within 48 hours and in most cases the problem will be resolved in this timeframe also.
+<br>
 @stop
 
 @section('Form')
