@@ -57,12 +57,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/operator"><i class="fa fa-fire"></i>Taxi Operators</a></li>
-            <li><a href="/taxidriver"><i class="fa fa-fire"></i>Taxi Drivers</a></li>
-            <li><a href="/windowcleaner"><i class="fa fa-fire"></i>Window Cleaners</a></li>
-            <li><a href="/roadclosure"><i class="fa fa-fire"></i>Temporary Road Closure</a></li>
-            <li><a href="/streettrading"><i class="fa fa-fire"></i>Street Trading</a></li>
-            <li><a href="/streetcafes"><i class="fa fa-fire"></i>Street Cafes</a></li>                                   
+            <li><a href="/operator"><i class="fa fa-phone"></i>Taxi Operators</a></li>
+            <li><a href="/taxidriver"><i class="fa fa-taxi"></i>Taxi Drivers</a></li>
+            <li><a href="/windowcleaner"><i class="fa fa-bitbucket"></i>Window Cleaners</a></li>
+            <li><a href="/roadclosure"><i class="fa fa-road"></i>Temporary Road Closure</a></li>
+            <li><a href="/streettrading"><i class="fa fa-street-view"></i>Street Trading</a></li>
+            <li><a href="/streetcafes"><i class="fa fa-coffee"></i>Street Cafes</a></li>                                   
             <li><a href="/planningapp"><i class="fa fa-building-o"></i>Submit Planning Application</a></li>
           </ul>
         </li>
