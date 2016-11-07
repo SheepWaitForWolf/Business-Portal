@@ -16,7 +16,7 @@ Environmental Health
 <li>investigate food complaints from residents and businesses in East Dunbartonshire and also complaints arising from foods manufactured in the area </li>
 <li>carry out surveillance of foods sold or produced in the area to ensure compliance against food safety and food quality standards </li>
 <li>promote food hygiene and safety to community groups within the East Dunbartonshire area</li>
-
+</ul>
 <p>Details on the policies and principles we apply are available in the document section.</p>
 
 <p>If you wish to obtain further information, advice on food related topics, want to make a complaint about a local restaurant or food selling business, or want to start a food selling business please contact an Enforcement Officer through Customer Services (link sends e-mail).</p>
