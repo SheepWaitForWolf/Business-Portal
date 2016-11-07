@@ -6,6 +6,11 @@ Business Rates
 
 @section('Content')
 <br>
+	<div class="col-md-12">
+			<h2> Business (Non-Domestic) Rates </h2>
+			<br>
+		</div>
+
 <div class="container">
 	<div class="col-md-8">
 		 <p>Business Rates (or non domestic rates) are a tax on occupation of non domestic subjects, levied by the Council on behalf of the Scottish Government. </p>

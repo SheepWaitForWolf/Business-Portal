@@ -6,6 +6,11 @@ Trading Standards
 
 
 @section('Content')
+
+	<div class="col-md-12">
+			<h2> Trading Standards Information </h2>
+			<br>
+		</div>
 <div id="content" class="region">
             <div id="block-system-main" class="block block-system no-title odd first last block-count-5 block-region-content block-main" >  
   
