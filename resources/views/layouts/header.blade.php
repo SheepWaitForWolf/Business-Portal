@@ -6,7 +6,7 @@
       <span class="logo-mini"><b>my</b>BP</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">myaccount Business Portal</span>
-    </a>
+    </a>\
 
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -148,7 +148,7 @@
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
                   <li><!-- Task item -->
-                    <a href="#">
+                    <a href="/register">
                       <h3>
                         Create Account
                         <small class="pull-right">100%</small>
@@ -162,7 +162,7 @@
                   </li>
                   <!-- end task item -->
                   <li><!-- Task item -->
-                    <a href="/registration">
+                    <a href="/home">
                       <h3>
                         Register Company
                         <small class="pull-right">50%</small>
@@ -176,7 +176,7 @@
                   </li>
                   <!-- end task item -->
                   <li><!-- Task item -->
-                    <a href="/annualupdate">
+                    <a href="/businessrates">
                       <h3>
                         Pay Business Rates
                         <small class="pull-right">90%</small>
@@ -190,7 +190,7 @@
                   </li>
                   <!-- end task item -->
                   <li><!-- Task item -->
-                    <a href="/schoolmeals">
+                    <a href="/planningapp">
                       <h3>
                         Submit a Planning Application
                         <small class="pull-right">20%</small>
