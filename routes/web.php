@@ -81,19 +81,33 @@ Route::group(['middleware' => ['web','auth']], function () {
 	Route::get('/', ['uses'=>'HomeController@doLogin','as'=>'get.home.doLogin']);
 	/*
 	|--------------------------------------------------------------------------
-	| Services GET Routes
+	| Licenses GET Routes
 	|--------------------------------------------------------------------------
 	*/
 
-	Route::get('/properties', ['uses'=>'ServicesController@getProperties','as'=>'get.services.getProperties']);
-	Route::get('/absence/{absence_id?}', ['uses'=>'ServicesController@getAbsencePage','as'=>'get.services.getAbsencePage']);
-	Route::get('/enrol/{enrol_id?}', ['uses'=>'ServicesController@getEnrolmentPage','as'=>'get.services.getEnrolmentPage']);
-	Route::get('/absence', ['uses'=>'ServicesController@getAbsencePage','as'=>'get.services.getAbsencePage']);
-	Route::get('/annualupdate', ['uses'=>'ServicesController@getAnnualUpdatePage','as'=>'get.services.showAnnualUpdatePage']);
-	Route::get('/schoolmeals', ['uses'=>'ServicesController@getSchoolMealsPage','as'=>'get.services.showSchoolMealsPage']);
-	Route::get('/getschools', ['uses'=>'ServicesController@getSchools', 'as'=>'get.services.getSchools']);
+	Route::get('/operator', function () {
+		return view('operator');
+	});
 
+	Route::get('/taxidriver', function () {
+		return view('taxidriver');
+	});
 
+	Route::get('/windowcleaner', function () {
+		return view('windowcleaner');
+	});
+		
+	Route::get('/roadclosure', function () {
+		return view('roadclosure');
+	});
+
+	Route::get('/streettrading', function () {
+		return view('streettrading');
+	});
+		
+	Route::get('/streetcafes', function () {
+		return view('streetcafes');
+	});
 	/*
 	|--------------------------------------------------------------------------
 	| Services POST Routes
