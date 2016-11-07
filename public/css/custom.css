@@ -5,3 +5,9 @@
 .profile-bg {
 	background-image: url("../dist/img/boxed-bg.jpg") !important;
 }
+
+
+.box-row {
+	width: 1113px;
+	display: inline-block;
+}

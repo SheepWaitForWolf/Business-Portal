@@ -2,10 +2,196 @@
 
 @section('Content')
 <div class="container">
-   <br>
-      <br>
-       <div class="row">
-        <div class="col-md-3">
+
+<h3>Welcome, {{$fname}}!</h3>
+<br>
+
+
+       
+<!-- 
+<div class="col-md-12">
+  <div class="box box-solid box-primary">
+    <div class="box-header with-border">
+      Business Details
+    </div>
+    <div class="box-body">
+
+    </div>
+  </div>
+</div> -->
+
+
+<div class="col-md-6 col-sm-12">
+  <div class="row">
+      <div class="col-md-12">
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Business Details</h3>
+          </div>
+          <div class="box-body" style="display: block;">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Trade Name</h4>
+                    <p class="lead">Business Solutions</p>
+                  
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Business Name</h4>
+                    <p class="lead"></p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Legal Form</h4>
+                    <p class="lead"></p>
+                  
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Legal Entity</h4>
+                    <p class="lead"></p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Company Registeration Number</h4>
+                    <p class="lead">123456</p>
+                  
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>VAT Registeration Number</h4>
+                    <p class="lead">1334245356</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Charity Reference Number</h4>
+                    <p class="lead"></p>
+                  
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Website</h4>
+                    <p class="lead"></p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Relationship Type</h4>
+                    <p class="lead">Primary</p>
+                  
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <h4>Verification Status</h4>
+                                            <p class="lead text-red">Not Verified</p>
+                                    </div>
+              </div>
+
+          
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-sm-12">
+  <div class="row">
+      <div class="col-md-12">       
+        <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+            <h4 class="box-title">Address Details</h4>
+          </div>
+          <div class="box-body" style="display: block;">
+          <div class="row">
+              <div class="col-xs-6">
+                 <div class="form-group">
+                    <h4>Address Type</h4>
+                      <p class="lead"></p>
+                  </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  <h4>Verification Status</h4>
+                                            <p class="lead text-red">Not Verified</p>
+                                    </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                 <div class="form-group">
+                    <h4>Address</h4>
+                      <p class="lead">123 Big Street  </p>
+                  </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Town</h4>
+                    <p class="lead">Somewhere</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Postcode</h4>
+                    <p class="lead">AB12 2EF</p>
+                  
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group">
+                  
+                    <h4>Country</h4>
+                    <p class="lead">gbr</p>
+                  
+                </div>
+              </div>
+
+                      </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row box-row">
+     <div class="col-md-3">
            <div class="info-box">
             <a href="/mailbox">
           <!-- Apply any bg-* class to to the icon to color it -->
@@ -18,9 +204,6 @@
 
         </div><!-- /.info-box -->
     </div>
-
-
-
 
     <div class="col-md-3">
         <div class="info-box">
@@ -78,11 +261,7 @@
     </div>
 
 </div>
-
-<br>
-<h3>Welcome, {{$fname}}!</h3>
-<br>
-
+</div>
     <div>
     <p><strong>
         Your user profile displays your myaccount Business Portal information. Please have a look around and be
