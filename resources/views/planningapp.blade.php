@@ -6,28 +6,35 @@ Submit Planning Application
 
 
 @section('Content')
-<p> Please be aware that the way planning applications are submitted online in Scotland will change from 13 January 2016 with the launch of a new online portal - ePlanning.scot (link is external).
+<div class="col-md-12">
+      <h2> Submit a Planning Application </h2>
+      <br>
+    </div>
 
-The good news is that new ePlanning portal will feel a lot like the current site, with a few tweaks and improvements added in.
+<p> Please be aware that the way planning applications are submitted online in Scotland will change from 13 January 2016 with the launch of a new online portal - <a href="https://www.eplanning.scot/ePlanningClient/">ePlanning.scot</a> (link is external). </p>
 
-However, users will be required to re-register on the new portal - no details will be transferred.
+<p>The good news is that new ePlanning portal will feel a lot like the current site, with a few tweaks and improvements added in.</p>
 
-Similarly, any applications on the outgoing website which have not been submitted before 17 March will be lost.
+<p>However, users will be required to re-register on the new portal - no details will be transferred.</p>
 
-The new website will be available from 13 January 2016 and anyone applying for planning permission from that date is strongly advised to use the new portal. You will not be able to start a new application on the old portal from this date.
+<p>Similarly, any applications on the outgoing website which have not been submitted before 17 March will be lost.</p>
 
-The website will:
+<p>The new website will be available from 13 January 2016 and anyone applying for planning permission from that date is strongly advised to use the new portal. You will not be able to start a new application on the old portal from this date.</p>
 
-guide you through each stage of the application process
-allow you to purchase ordnance survey plans to include with your application
-help avoid common mistakes when submitting an application.
-Once we have received a complete application, we will register and start to consider your application.
+<p>The website will:</p>
+<ul>
+<li>guide you through each stage of the application process</li>
+<li>allow you to purchase ordnance survey plans to include with your application</li>
+<li>help avoid common mistakes when submitting an application.</li>
+</ul>
 
-We have produced a Planning Toolkit which sets out the stages in processing applications.
+<p>Once we have received a complete application, we will register and start to consider your application.</p>
 
-Planning Processing Agreements
+<p>We have produced a Planning Toolkit which sets out the stages in processing applications.</p>
 
-If you want to submit a planning application for a major development you are encouraged to use processing agreements. These can guide the developer on:
+<h3>Planning Processing Agreements</h3>
+
+<p>If you want to submit a planning application for a major development you are encouraged to use processing agreements. These can guide the developer on:</p>
 
 timescales
 information required for the application
@@ -35,10 +42,12 @@ the processes that will take place before a decision is made on the application.
 Along with the processing agreement there should be discussions between the planning authority, developer, statutory agencies and other relevant consultation bodies.
 
 A processing agreement does not guarantee that planning permission will be granted, but it does set out the expectations of all parties and makes sure that everyone involved is clear on the key stages and dates within the process, and the level of detail that is required.</p>
+<br>
+<br>
 @endsection
 
 @section('Form')
-<form class="form-horizontal" action="{{ url('/feedback/') }}" method="post">
+<!-- <form class="form-horizontal" action="{{ url('/feedback/') }}" method="post">
   <fieldset>
     <div class="form-group">
       <label for="inputFirstName" class="col-lg-2 control-label">First Name</label>
@@ -107,5 +116,5 @@ A processing agreement does not guarantee that planning permission will be grant
       </div>
     </div>
   </fieldset>
-</form>
+</form> -->
 @endsection
