@@ -108,6 +108,9 @@ Route::group(['middleware' => ['web','auth']], function () {
 	Route::get('/streetcafes', function () {
 		return view('streetcafes');
 	});
+
+	Route::get('/properties', ['uses'=>'ServicesController@getProperties','as'=>'get.services.getProperties']);
+
 	/*
 	|--------------------------------------------------------------------------
 	| Services POST Routes
