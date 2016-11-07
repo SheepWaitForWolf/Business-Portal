@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('Title')
-Help
+Start-up Advice
 @stop
 
 @section('Content')

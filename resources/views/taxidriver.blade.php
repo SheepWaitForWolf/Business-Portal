@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('Title')
-Infographs
+Taxi and Private Hire Drivers
 @stop
 
 @section('Content')
@@ -53,7 +53,6 @@ didn't exercise their discretion in a reasonable manner
 Appeals against a sheriff's decision can be made to the Court of Session within 28 days of the decision.
 
  </p>
-
 		</div>
 </div>
 @stop
