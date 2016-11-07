@@ -51,7 +51,7 @@
         </li>
         <li class="treeview">
           <a href="/apply">
-            <i class="fa fa-edit"></i> <span>Licenses & Permits</span>
+            <i class="fa fa-fire"></i> <span>Licenses & Permits</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
