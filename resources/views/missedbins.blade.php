@@ -106,53 +106,57 @@ Report a Missed Collection
               </div>
         </div>
 
-    <div class='form-item webform-component webform-component-matrix webform-component--which-dates webform-component-which-dates' id='edit-which_dates-14'><label>Which dates did we miss?</label><table id="edit-which_dates-14-table" class="sticky-enabled">
-     <thead><tr><th>Each collection missed</th><th>Date</th> </tr></thead>
-    <tbody>
-     <tr class="odd"><td><div id="edit-submitted-bin-collection-details-which-dates-1-1" class="form-item form-type-item">
-      <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-1">Each collection missed </label>
-     Date Missed
-    </div>
-    </td><td><div  class="form-item webform-component webform-component- webform-component--bin-collection-details--which-dates--1--2">
-      <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2">Date </label>
-     <div class="webform-container-inline webform-datepicker"><div class="form-item form-type-select form-item-submitted-bin-collection-details-which-dates-1-2-day">
-      <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2-day">Day </label>
-     <select class="day form-select" id="edit-submitted-bin-collection-details-which-dates-1-2-day" name="submitted[bin_collection_details][which_dates][1][2][day]"><option value="">Day</option><option value="1">1</option><option value="2">2</option><option value="3" selected="selected">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
-    </div>
-    <div class="form-item form-type-select form-item-submitted-bin-collection-details-which-dates-1-2-month">
-      <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2-month">Month </label>
-     <select class="month form-select" id="edit-submitted-bin-collection-details-which-dates-1-2-month" name="submitted[bin_collection_details][which_dates][1][2][month]"><option value="">Month</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11" selected="selected">Nov</option><option value="12">Dec</option></select>
-    </div>
-    <div class="form-item form-type-select form-item-submitted-bin-collection-details-which-dates-1-2-year">
-      <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2-year">Year </label>
-     <select class="year form-select" id="edit-submitted-bin-collection-details-which-dates-1-2-year" name="submitted[bin_collection_details][which_dates][1][2][year]"><option value="">Year</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016" selected="selected">2016</option><option value="2017">2017</option><option value="2018">2018</option></select>
-    </div>
-    <input type="image" src="/sites/all/modules/webform/images/calendar.png" class="webform-calendar webform-calendar-start-2014-11-03 webform-calendar-end-2018-11-03 webform-calendar-day-0" alt="Open popup calendar" title="Open popup calendar" />
-    </div>
-    </div>
-    </td> </tr>
-     <tr class="even"><td colspan="2"></td> </tr>
-    </tbody>
-    </table>
-    <input type="submit" id="edit-submitted-bin-collection-details-which-dates-add-row-which-dates" name="add_row_which_dates" value="Add another date" class="form-submit" /></div></div></fieldset>
-    <fieldset class="webform-component-fieldset webform-component--data-protection-statement form-wrapper"><legend><span class="fieldset-legend">Data Protection Statement</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">The information provided in this form will be processed by East Dunbartonshire Council in accordance with the Data Protection Act 1998. The data you have provided will be used for processing your enquiry and for statistical purposes.</div></div></fieldset>
-    <div  class="form-item webform-component webform-component-markup webform-component--privacy-statement">
-     <p><a href="/system_pages/privacy_statement.aspx" target="_blank">Privacy Statement</a></p>
+    <div class='form-item webform-component webform-component-matrix webform-component--which-dates webform-component-which-dates' id='edit-which_dates-14'><label>Which dates did we miss?</label>
+      <table id="edit-which_dates-14-table" class="sticky-enabled">
+          <thead><tr><th>Each collection missed</th><th>Date</th> </tr></thead>
+            <tbody>
+                <tr class="odd"><td>
+                  <div id="edit-submitted-bin-collection-details-which-dates-1-1" class="form-item form-type-item">
+                    <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-1">Each collection missed </label>
+                    Date Missed
+                  </div>
+                    </td><td>
+                    <div  class="form-item webform-component webform-component- webform-component--bin-collection-details--which-dates--1--2">
+                        <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2">Date </label>
+                      <div class="webform-container-inline webform-datepicker">
+                        <div class="form-item form-type-select form-item-submitted-bin-collection-details-which-dates-1-2-day">
+                            <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2-day">Day </label>
+                                <select class="day form-select" id="edit-submitted-bin-collection-details-which-dates-1-2-day" name="submitted[bin_collection_details][which_dates][1][2][day]"><option value="">Day</option><option value="1">1</option><option value="2">2</option><option value="3" selected="selected">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+                        </div>
+                            <div class="form-item form-type-select form-item-submitted-bin-collection-details-which-dates-1-2-month">
+                              <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2-month">Month </label>
+                                  <select class="month form-select" id="edit-submitted-bin-collection-details-which-dates-1-2-month" name="submitted[bin_collection_details][which_dates][1][2][month]"><option value="">Month</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11" selected="selected">Nov</option><option value="12">Dec</option></select>
+                            </div>
 
-    </div>
-    <input type="hidden" name="details[sid]" />
-    <input type="hidden" name="details[page_num]" value="1" />
-    <input type="hidden" name="details[page_count]" value="1" />
-    <input type="hidden" name="details[finished]" value="0" />
-    <input type="hidden" name="form_build_id" value="form-1pkfhKI4tSwnCqA4pnAONtl5OkcwA30V8vu9FAGTwbY" />
-    <input type="hidden" name="form_id" value="webform_client_form_499" />
-    <div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Submit" /></div></div></form>  </div>
+                            <div class="form-item form-type-select form-item-submitted-bin-collection-details-which-dates-1-2-year">
+                                  <label class="element-invisible" for="edit-submitted-bin-collection-details-which-dates-1-2-year">Year </label>
+                                      <select class="year form-select" id="edit-submitted-bin-collection-details-which-dates-1-2-year" name="submitted[bin_collection_details][which_dates][1][2][year]"><option value="">Year</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016" selected="selected">2016</option><option value="2017">2017</option><option value="2018">2018</option></select>
+                            </div>
+                                <input type="image" src="/sites/all/modules/webform/images/calendar.png" class="webform-calendar webform-calendar-start-2014-11-03 webform-calendar-end-2018-11-03 webform-calendar-day-0" alt="Open popup calendar" title="Open popup calendar" />
+                      </div>
+                    </div>
+                        </td> 
+                </tr>
+              <tr class="even"><td colspan="2"></td> </tr>
+            </tbody>
+        </table>
+            <input type="submit" id="edit-submitted-bin-collection-details-which-dates-add-row-which-dates" name="add_row_which_dates" value="Add another date" class="form-submit" /></div></div></fieldset>
+              <fieldset class="webform-component-fieldset webform-component--data-protection-statement form-wrapper"><legend><span class="fieldset-legend">Data Protection Statement</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">The information provided in this form will be processed by East Dunbartonshire Council in accordance with the Data Protection Act 1998. The data you have provided will be used for processing your enquiry and for statistical purposes.</div></div></fieldset>
+            <div  class="form-item webform-component webform-component-markup webform-component--privacy-statement">
+                        <p><a href="/system_pages/privacy_statement.aspx" target="_blank">Privacy Statement</a></p>
 
-      
-      
-      <span property="dc:title" content="Missed bin collection" class="rdf-meta element-hidden"></span></article>
-
-      </div>    </div> </div>       
+            </div>
+              <input type="hidden" name="details[sid]" />
+              <input type="hidden" name="details[page_num]" value="1" />
+              <input type="hidden" name="details[page_count]" value="1" />
+              <input type="hidden" name="details[finished]" value="0" />
+              <input type="hidden" name="form_build_id" value="form-1pkfhKI4tSwnCqA4pnAONtl5OkcwA30V8vu9FAGTwbY" />
+              <input type="hidden" name="form_id" value="webform_client_form_499" />
+            <div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Submit" />
+            </div>
+        </div>
+    </form>  
+  </div>  
 @endsection 
 
 
