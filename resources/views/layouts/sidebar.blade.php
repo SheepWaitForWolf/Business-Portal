@@ -35,18 +35,6 @@
           </a>
         </li>
         <li class="treeview">
-          <a href="/apply">
-            <i class="fa fa-edit"></i> <span>Apply For</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/permits"><i class="fa fa-fire"></i>Licences & Permits</a></li>
-            <li><a href="/planningapp"><i class="fa fa-building-o"></i>Submit Planning Application</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
           <a href="/support">
             <i class="fa fa-briefcase"></i>
             <span>Business Support</span>
@@ -59,6 +47,23 @@
             <li><a href="/properties"><i class="fa fa-newspaper-o"></i>Property Directory</a></li>
             <li><a href="/businessrates"><i class="fa fa-industry"></i>Business Rates</a></li>
             <li><a href="/tradingstandards"><i class="fa fa-legal"></i>Trading Standards</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="/apply">
+            <i class="fa fa-edit"></i> <span>Licenses & Permits</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/operator"><i class="fa fa-fire"></i>Taxi Operators</a></li>
+            <li><a href="/taxidriver"><i class="fa fa-fire"></i>Taxi Drivers</a></li>
+            <li><a href="/windowcleaner"><i class="fa fa-fire"></i>Window Cleaners</a></li>
+            <li><a href="/roadclosure"><i class="fa fa-fire"></i>Temporary Road Closure</a></li>
+            <li><a href="/streettrading"><i class="fa fa-fire"></i>Street Trading</a></li>
+            <li><a href="/streetcafes"><i class="fa fa-fire"></i>Street Cafes</a></li>                                   
+            <li><a href="/planningapp"><i class="fa fa-building-o"></i>Submit Planning Application</a></li>
           </ul>
         </li>
         <li class="treeview">
