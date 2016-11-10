@@ -222,7 +222,12 @@
                 <img src="dist/img/defaultavatar.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Tony Soprano
+                  <?php $id = Auth::id(); 
+
+                  $username = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
+                  $name = $username[0]->name;
+                  echo $name;
+                  ?>
                   <small>Member since Sep. 2016</small>
                 </p>
               </li>
