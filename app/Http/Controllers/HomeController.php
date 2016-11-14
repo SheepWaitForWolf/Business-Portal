@@ -19,6 +19,7 @@ use Response;
 use DB;
 use Log;
 use Auth;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -67,6 +68,27 @@ class HomeController extends Controller
         $fname = $username[0]->firstname;
 
         return view('home')->with('inboxcount', $inboxcount)->with('fname', $fname);
+    }
+
+    public function updateUserInfo(Request $request)
+    {
+        $userid = Auth::id();
+        $userrecord = User::find($userid);
+        $userrecord->f_name = $request->f_name;
+        $userrecord->l_name = $request->l_name;
+        $userrecord->artist = $request->artist;
+        $userrecord->postcode = $request->postcode;
+        $userrecord->telephone = $request->telephone;
+        $userrecord->dob = $request->dob;
+        $userrecord->travel_radius = $request->travel_radius;
+        $userrecord->avatar = $request->avatar;
+        $userrecord->save();
+
+        $sql = json_decode(json_encode(DB::table('users')->select('f_name')->where('id', '=', $userid)->get()));
+        $fname = $sql[0]->f_name;
+        $inboxcount = 13;
+
+        return view('home')->with('fname', $fname)->with('inboxcount', $inboxcount);
     }
 
 }
