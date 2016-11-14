@@ -34,6 +34,11 @@ Route::group(['middleware' => ['web','auth']], function () {
 		return view('help');
 	});
 
+
+	Route::get('/editprofile', function () {
+		return view('editprofile');
+	});
+
 		Route::get('/startup', function () {
 		return view('startup');
 	});
@@ -116,6 +121,7 @@ Route::group(['middleware' => ['web','auth']], function () {
 	| Services POST Routes
 	|--------------------------------------------------------------------------
 	*/
+	Route::post('/editprofile', ['uses'=>'HomeController@updateUserInfo','as'=>'post.home.updateUserInfo']);
 	Route::post('/registration/addchild/{child_id?}', ['uses'=>'ServicesController@postChildren','as'=>'post.services.postChildren']);
 	Route::post('/enrol/{enrol_id?}', ['uses'=>'ServicesController@postEnrolmentPage','as'=>'post.services.postEnrolmentPage']);
 	Route::post('/absence/{absence_id?}', ['uses'=>'ServicesController@postAbsencePage','as'=>'post.services.postAbsencePage']);
