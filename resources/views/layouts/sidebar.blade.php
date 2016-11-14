@@ -1,3 +1,9 @@
+  <?php 
+        $id = Auth::id();
+        $sql9 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
+        $avatar = $sql9[0]->avatar;
+ ?>
+
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -5,11 +11,18 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/defaultavatar.jpg" class="img-circle" alt="User Image">
+          <img src="dist/img/<?php if($avatar === NULL)
+          {
+            echo "defaultavatar.jpg";
+          }
+          else {
+            echo $avatar;
+          }
+          ?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>myaccount</p>
-          <a href="/home"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="/home"><i class="fa fa-circle text-success"></i>Online</a>
         </div>
       </div>
       <!-- search form -->
