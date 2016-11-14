@@ -188,8 +188,9 @@
   </div>
 </div>
 
+ <button type="button" class="btn btn-sm btn-success"><a href="/editprofile">Edit Profile</a></button>
 
-<div class="container">
+
   <div class="row box-row">
      <div class="col-md-3">
            <div class="info-box">
@@ -227,7 +228,7 @@
       <span class="info-box-icon bg-yellow"><i class="fa fa-industry"></i></span>
         </a>
       <div class="info-box-content">
-        <span class="info-box-text">Business Users</span>
+        <span class="info-box-text">Global Users</span>
         <span class="info-box-number">15,680</span>
         <!-- The progress section is optional -->
         <div class="progress">
@@ -260,8 +261,8 @@
     </div><!-- /.info-box -->
     </div>
 
-</div>
-</div>
+  </div>
+
     <div>
     <p><strong>
         Your user profile displays your myaccount Business Portal information. Please have a look around and be
