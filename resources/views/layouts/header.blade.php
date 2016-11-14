@@ -5,14 +5,10 @@
        if(Auth::check()){
        $id = Auth::id(); 
 
-       $sql = json_decode(json_encode(DB::table('users')->select('f_name')->where('id', '=', $id)->get()));
-       $fname = $sql[0]->f_name;
-      
+       $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
+       $name = $sql[0]->name;
 
-       $sql2 = json_decode(json_encode(DB::table('users')->select('l_name')->where('id', '=', $id)->get()));
-       $lname = $sql2[0]->l_name;
-
-       $sql3 = json_decode(json_encode(DB::table('users')->select('avatar')->where('id', '=', $id)->get()));
+       $sql3 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
        $avatar = $sql3[0]->avatar;
 
         }
