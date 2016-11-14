@@ -1,5 +1,22 @@
 <header class="main-header">
 
+<?php 
+
+       if(Auth::check()){
+       $id = Auth::id(); 
+
+       $sql = json_decode(json_encode(DB::table('users')->select('f_name')->where('id', '=', $id)->get()));
+       $fname = $sql[0]->f_name;
+      
+
+       $sql2 = json_decode(json_encode(DB::table('users')->select('l_name')->where('id', '=', $id)->get()));
+       $lname = $sql2[0]->l_name;
+
+       $sql3 = json_decode(json_encode(DB::table('users')->select('avatar')->where('id', '=', $id)->get()));
+       $avatar = $sql3[0]->avatar;
+
+        }
+?>
     <!-- Logo -->
     <a href="/home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -213,13 +230,27 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/defaultavatar.jpg" class="user-image" alt="User Image">
+             <img src="dist/img/<?php if($avatar === NULL)
+          {
+            echo "defaultavatar.jpg";
+          }
+          else {
+            echo $avatar;
+          }
+          ?>" class="user-image" alt="User Image">
               <span class="hidden-xs">myaccount</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/defaultavatar.jpg" class="img-circle" alt="User Image">
+                <img src="dist/img/<?php if($avatar === NULL)
+          {
+            echo "defaultavatar.jpg";
+          }
+          else {
+            echo $avatar;
+          }
+          ?>" class="img-circle" alt="User Image">
 
                 <p>
                   <?php 
