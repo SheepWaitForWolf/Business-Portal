@@ -9,27 +9,27 @@ function updateTextInput(val) {
 </script>
 
 <?php 
-         if(Auth::check()){
-         $id = Auth::id(); 
+     if(Auth::check()){
+     $id = Auth::id(); 
 
-        $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
-        $name = $sql[0]->name;
+    $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
+    $name = $sql[0]->name;
 
-        $sql4 = json_decode(json_encode(DB::table('business_users_mst')->select('email')->where('id', '=', $id)->get()));
-        $email = $sql4[0]->email;
+    $sql4 = json_decode(json_encode(DB::table('business_users_mst')->select('email')->where('id', '=', $id)->get()));
+    $email = $sql4[0]->email;
 
-        $sql5 = json_decode(json_encode(DB::table('business_users_mst')->select('mobile_number')->where('id', '=', $id)->get()));
-        $telephone = $sql5[0]->mobile_number;
+    $sql5 = json_decode(json_encode(DB::table('business_users_mst')->select('mobile_number')->where('id', '=', $id)->get()));
+    $telephone = $sql5[0]->mobile_number;
 
-        $sql6 = json_decode(json_encode(DB::table('business_users_mst')->select('post_code')->where('id', '=', $id)->get()));
-        $postcode = $sql6[0]->post_code;
+    $sql6 = json_decode(json_encode(DB::table('business_users_mst')->select('post_code')->where('id', '=', $id)->get()));
+    $postcode = $sql6[0]->post_code;
 
-        $sql7 = json_decode(json_encode(DB::table('business_users_mst')->select('dob')->where('id', '=', $id)->get()));
-        $dob = $sql7[0]->dob;
+    $sql7 = json_decode(json_encode(DB::table('business_users_mst')->select('dob')->where('id', '=', $id)->get()));
+    $dob = $sql7[0]->dob;
 
-        $sql9 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
-        $avatar = $sql9[0]->avatar;
-        }
+    $sql9 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
+    $avatar = $sql9[0]->avatar;
+    }
 ?>
 
 <form class="form-horizontal" action="{{ url('/editprofile/') }}" method="post">
@@ -53,7 +53,7 @@ function updateTextInput(val) {
       </div>
     </div>
     <div class="form-group">
-      <label for="doa" class="col-lg-2 control-label">Date of Birth</label>
+      <label for="dob" class="col-lg-2 control-label">Date of Birth</label>
       <div class="col-lg-6">
         <input type="date" class="form-control" name="dob" id="dob" value="<?php echo $dob ?>">
       </div>
