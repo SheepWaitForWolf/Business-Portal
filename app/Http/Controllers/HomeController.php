@@ -74,21 +74,20 @@ class HomeController extends Controller
     {
         $userid = Auth::id();
         $userrecord = User::find($userid);
-        $userrecord->f_name = $request->f_name;
-        $userrecord->l_name = $request->l_name;
-        $userrecord->artist = $request->artist;
-        $userrecord->postcode = $request->postcode;
-        $userrecord->telephone = $request->telephone;
+        $userrecord->name = $request->name;
+        $userrecord->username = $request->username;
+        $userrecord->post_code = $request->post_code;
+        $userrecord->mobile_number = $request->mobile_number;
         $userrecord->dob = $request->dob;
-        $userrecord->travel_radius = $request->travel_radius;
+        $userrecord->email = $request->email;
         $userrecord->avatar = $request->avatar;
         $userrecord->save();
 
-        $sql = json_decode(json_encode(DB::table('users')->select('f_name')->where('id', '=', $userid)->get()));
-        $fname = $sql[0]->f_name;
+        $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $userid)->get()));
+        $name = $sql[0]->name;
         $inboxcount = 13;
 
-        return view('home')->with('fname', $fname)->with('inboxcount', $inboxcount);
+        return view('home')->with('name', $name)->with('inboxcount', $inboxcount);
     }
 
 }
