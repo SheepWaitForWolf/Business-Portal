@@ -3,7 +3,7 @@
 @section('Content')
 <div class="container">
 
-<h3>Welcome, {{$name}}!</h3>
+<h3>Welcome, {{$fname}}!</h3>
 <br>
 
 
