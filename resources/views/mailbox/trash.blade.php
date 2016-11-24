@@ -1,5 +1,19 @@
 @extends('layouts.master')
 
+<?php 
+
+$id = Auth::id();
+$sql = json_decode(json_encode(DB::table('business_users_mst')->select('email')->where('id', '=', $id)->get()));
+$email = $sql[0]->email;
+
+$sql2 = json_decode(json_encode(DB::table('business_mail_mst')->select('mailid')->where('sent_to', '=', $email)->get()));
+$currentpage = 1;
+$firstmail = ($currentpage - 1) * 20 + 1;
+$lastmail = $firstmail + 19;
+$totalmail = DB::table('business_mail_mst')->count();
+$mailstring = $firstmail . "-" . $lastmail . "/" . $totalmail;
+
+?>
 @section('Title')
 Mailbox
 @stop
@@ -94,7 +108,7 @@ Mailbox
                 <!-- /.btn-group -->
                 <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
                 <div class="pull-right">
-                  1-50/200
+                  <?php echo $mailstring ?>
                   <div class="btn-group">
                     <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
                     <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
@@ -261,7 +275,7 @@ Mailbox
                 <!-- /.btn-group -->
                 <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
                 <div class="pull-right">
-                  1-50/200
+                   <?php echo $mailstring ?>
                   <div class="btn-group">
                     <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
                     <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
