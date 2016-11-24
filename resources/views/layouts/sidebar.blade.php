@@ -11,14 +11,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/<?php if($avatar === NULL)
-          {
-            echo "defaultavatar.jpg";
-          }
-          else {
-            echo $avatar;
-          }
-          ?>" class="img-circle" alt="User Image">
+          <img src="dist/img/<?php echo $avatar ?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>myaccount</p>
