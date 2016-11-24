@@ -12,23 +12,14 @@ function updateTextInput(val) {
      if(Auth::check()){
      $id = Auth::id(); 
 
-    $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
+    $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name', 'email', 'mobile_number', 'post_code', 'dob', 'avatar')->where('id', '=', $id)->get()));
+    
     $name = $sql[0]->name;
-
-    $sql4 = json_decode(json_encode(DB::table('business_users_mst')->select('email')->where('id', '=', $id)->get()));
-    $email = $sql4[0]->email;
-
-    $sql5 = json_decode(json_encode(DB::table('business_users_mst')->select('mobile_number')->where('id', '=', $id)->get()));
-    $telephone = $sql5[0]->mobile_number;
-
-    $sql6 = json_decode(json_encode(DB::table('business_users_mst')->select('post_code')->where('id', '=', $id)->get()));
-    $postcode = $sql6[0]->post_code;
-
-    $sql7 = json_decode(json_encode(DB::table('business_users_mst')->select('dob')->where('id', '=', $id)->get()));
-    $dob = $sql7[0]->dob;
-
-    $sql9 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
-    $avatar = $sql9[0]->avatar;
+    $email = $sql[0]->email;
+    $telephone = $sql[0]->mobile_number;
+    $postcode = $sql[0]->post_code;
+    $dob = $sql[0]->dob;
+    $avatar = $sql[0]->avatar;
     }
 ?>
 
