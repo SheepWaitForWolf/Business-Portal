@@ -12,3 +12,10 @@
 	display: inline-block;
 }
 
+.navbar-static-top {
+	top: -20px;
+}
+
+.main-header {
+	height: 50px;
+}
