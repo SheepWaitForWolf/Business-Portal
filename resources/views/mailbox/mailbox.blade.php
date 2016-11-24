@@ -108,7 +108,7 @@ Mailbox
                 <!-- /.btn-group -->
                 <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
                 <div class="pull-right">
-                  1-20/200
+                 <?php echo $mailstring ?>
                   <div class="btn-group">
                   {{ $emails->links() }}
                   </div>
