@@ -238,7 +238,7 @@
                   
                   $id = Auth::id(); 
 
-                  $username = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
+                  $username = DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get();
                   $name = $username[0]->name;
                   echo $name;
                   }
