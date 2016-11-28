@@ -1,6 +1,6 @@
   <?php 
         $id = Auth::id();
-        $sql9 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
+        $sql9 = DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get();
         $avatar = $sql9[0]->avatar;
  ?>
 
