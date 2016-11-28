@@ -5,11 +5,9 @@
        if(Auth::check()){
        $id = Auth::id(); 
 
-       $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $id)->get()));
+       $sql = DB::table('business_users_mst')->select('name', 'avatar')->where('id', '=', $id)->get();
        $name = $sql[0]->name;
-
-       $sql3 = json_decode(json_encode(DB::table('business_users_mst')->select('avatar')->where('id', '=', $id)->get()));
-       $avatar = $sql3[0]->avatar;
+       $avatar = $sql[0]->avatar;
 
         }
 ?>
