@@ -12,7 +12,7 @@ function updateTextInput(val) {
      if(Auth::check()){
      $id = Auth::id(); 
 
-    $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name', 'email', 'mobile_number', 'post_code', 'dob', 'avatar')->where('id', '=', $id)->get()));
+    $sql = DB::table('business_users_mst')->select('name', 'email', 'mobile_number', 'post_code', 'dob', 'avatar')->where('id', '=', $id)->get();
     
     $name = $sql[0]->name;
     $email = $sql[0]->email;
