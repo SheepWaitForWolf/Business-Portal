@@ -62,8 +62,8 @@ class HomeController extends Controller
     public function displayUserInfo(Request $request)
     {
         $inboxcount = 13;
-       
-        $username = json_decode(json_encode(DB::table('business_users_mst')->select(DB::raw('SUBSTRING_INDEX(name, " ", 1) as firstname'))->where('email', '=', 'big_tony@gmail.com')->get()));
+        $userid = Auth::id();
+        $username = DB::table('business_users_mst')->select(DB::raw('SUBSTRING_INDEX(name, " ", 1) as firstname'))->where('id', '=', $userid)->get();
 
         $fname = $username[0]->firstname;
 
@@ -83,11 +83,12 @@ class HomeController extends Controller
         $userrecord->avatar = $request->avatar;
         $userrecord->save();
 
-        $sql = json_decode(json_encode(DB::table('business_users_mst')->select('name')->where('id', '=', $userid)->get()));
-        $name = $sql[0]->name;
+        $sql = DB::table('business_users_mst')->select('name')->where('id', '=', $userid)->get();
+        $sql2 = DB::table('business_users_mst')->select(DB::raw('SUBSTRING_INDEX(name, " ", 1) as firstname'))->where('id', '=', $userid)->get();
+        $fname = $sql2[0]->firstname;
         $inboxcount = 13;
 
-        return view('home')->with('name', $name)->with('inboxcount', $inboxcount);
+        return view('home')->with('fname', $fname)->with('inboxcount', $inboxcount);
     }
 
 }
