@@ -47,7 +47,7 @@ A processing agreement does not guarantee that planning permission will be grant
 @endsection
 
 @section('Form')
-<form class="form-horizontal" action="{{ url('/feedback/') }}" method="post">
+<form class="form-horizontal" action="{{ url('/planningapp/') }}" method="post">
   <fieldset>
     <div class="form-group">
       <label for="inputFirstName" class="col-lg-2 control-label">First Name</label>
@@ -99,7 +99,7 @@ A processing agreement does not guarantee that planning permission will be grant
       <div class="col-lg-10">
         <textarea rows="4" cols="50" name="message" class="form-control" id="inputMessage" placeholder="Type your message here">
         </textarea>
-        <!-- <input type="textarea" rows="4" cols="50" name="message" class="form-control" id="inputMessage" placeholder="Type your message here">
+        <input type="textarea" rows="4" cols="50" name="message" class="form-control" id="inputMessage" placeholder="Type your message here">
       </div>
         <br>
       </div>
@@ -116,5 +116,5 @@ A processing agreement does not guarantee that planning permission will be grant
       </div>
     </div>
   </fieldset>
-</form> -->
+</form>
 @endsection
